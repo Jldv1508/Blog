@@ -1,0 +1,2027 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tormenta de Hojas · Salud, Hábitos de Vida y Finanzas</title>
+    <!-- Fuentes premium -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <style>
+        /* ============================================================
+                   RESET Y BASE — FONDO APETECIBLE
+                   ============================================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, system-ui, sans-serif;
+            background: #f0ebe4;
+            color: #1e293b;
+            line-height: 1.8;
+            padding: 0;
+            min-height: 100vh;
+            background-image: 
+                radial-gradient(ellipse at 20% 50%, rgba(218, 162, 122, 0.06) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(90, 122, 107, 0.05) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 80%, rgba(218, 162, 122, 0.04) 0%, transparent 50%);
+        }
+
+        /* ============================================================
+                   CONTENEDOR PRINCIPAL
+                   ============================================================ */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2.5rem 2.5rem 1rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4rem;
+            background: transparent;
+        }
+
+        /* ============================================================
+                   HEADER
+                   ============================================================ */
+        header {
+            background: linear-gradient(165deg, #0f1e2e 0%, #1a2f42 100%);
+            color: #f0ece3;
+            padding: 4rem 2.5rem 3rem;
+            margin: 0 auto 2.5rem;
+            max-width: 1200px;
+            border-radius: 0 0 80px 80px;
+            box-shadow: 0 16px 48px rgba(15, 30, 46, 0.20);
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::after {
+            content: '🍂';
+            position: absolute;
+            bottom: -30px;
+            right: -10px;
+            font-size: 10rem;
+            opacity: 0.04;
+            transform: rotate(-12deg);
+            pointer-events: none;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 0.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        .logo h1 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 3.2rem;
+            font-weight: 400;
+            letter-spacing: -0.5px;
+            color: #f0ece3;
+            line-height: 1.1;
+        }
+
+        .logo h1 span {
+            color: #dba27a;
+            font-style: italic;
+        }
+
+        .logo p {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            color: #94a9b8;
+            margin-top: 0.1rem;
+            font-weight: 300;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .logo p i {
+            color: #dba27a;
+            font-style: normal;
+        }
+
+        .header-social {
+            display: flex;
+            gap: 0.6rem;
+            align-items: center;
+        }
+
+        .header-social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            color: #7a97a8;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .header-social a svg {
+            width: 16px;
+            height: 16px;
+            fill: currentColor;
+            transition: all 0.3s ease;
+        }
+
+        .header-social a:hover {
+            transform: translateY(-2px);
+            border-color: rgba(255,255,255,0.15);
+        }
+
+        .header-social a.whatsapp:hover {
+            color: #25D366;
+            background: rgba(37, 211, 102, 0.10);
+            border-color: rgba(37, 211, 102, 0.20);
+        }
+
+        .header-social a.email:hover {
+            color: #dba27a;
+            background: rgba(218, 162, 122, 0.10);
+            border-color: rgba(218, 162, 122, 0.20);
+        }
+
+        .header-social a.facebook:hover {
+            color: #1877f2;
+            background: rgba(24, 119, 242, 0.10);
+            border-color: rgba(24, 119, 242, 0.20);
+        }
+
+        .header-social a.instagram:hover {
+            color: #dc2743;
+            background: rgba(220, 39, 67, 0.10);
+            border-color: rgba(220, 39, 67, 0.20);
+        }
+
+        /* ============================================================
+                   CATEGORÍAS EN EL HEADER
+                   ============================================================ */
+        .header-categorias {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem 2.5rem;
+            justify-content: center;
+            margin-top: 1.8rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            position: relative;
+            z-index: 1;
+        }
+
+        .header-categorias span {
+            color: #b0c8d8;
+            font-size: 0.8rem;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+            cursor: default;
+        }
+
+        .header-categorias span:hover {
+            opacity: 1;
+            color: #dba27a;
+        }
+
+        .header-categorias .separador {
+            color: #3a5a6a;
+            opacity: 0.3;
+        }
+
+        /* ============================================================
+                   COLUMNA PRINCIPAL — ARTÍCULOS
+                   ============================================================ */
+        .blog-main {
+            flex: 2.5;
+            min-width: 280px;
+        }
+
+        .post-item {
+            background: #ffffff;
+            padding: 2.8rem 3rem 2.5rem;
+            margin-bottom: 2.8rem;
+            border-radius: 24px;
+            box-shadow: 0 4px 16px rgba(15, 30, 46, 0.04);
+            border: 1px solid rgba(15, 30, 46, 0.04);
+            transition: all 0.3s ease;
+            position: relative;
+            cursor: pointer;
+        }
+
+        .post-item:hover {
+            box-shadow: 0 16px 40px -12px rgba(15, 30, 46, 0.10);
+            transform: translateY(-3px);
+        }
+
+        .post-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 4px;
+            border-radius: 4px 0 0 4px;
+            background: linear-gradient(to bottom, #dba27a, #5a7a6b);
+            opacity: 0.3;
+            transition: opacity 0.4s ease;
+        }
+
+        .post-item:hover::before {
+            opacity: 0.8;
+        }
+
+        .post-item .categoria-tag {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.6rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.8px;
+            padding: 0.2rem 1.4rem;
+            border-radius: 40px;
+            display: inline-block;
+            margin-bottom: 0.8rem;
+            background: #1a2f42;
+            color: #f0ece3;
+            pointer-events: none;
+        }
+
+        .post-item .post-imagen {
+            width: 100%;
+            border-radius: 16px;
+            margin: 0.5rem 0 1.2rem 0;
+            max-height: 400px;
+            object-fit: cover;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+            pointer-events: none;
+        }
+
+        .post-item h2 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 2.2rem;
+            font-weight: 400;
+            color: #0f1e2e;
+            margin-bottom: 0.3rem;
+            line-height: 1.2;
+        }
+
+        .post-item h2 a {
+            color: inherit;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .post-item h2 a:hover {
+            color: #c9774d;
+        }
+
+        .post-item .meta {
+            font-size: 0.8rem;
+            color: #6b7f8e;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            flex-wrap: wrap;
+            font-weight: 400;
+            letter-spacing: 0.2px;
+            pointer-events: none;
+        }
+
+        .post-item .meta .lectura {
+            background: #f1f0ec;
+            padding: 0.1rem 1rem;
+            border-radius: 30px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: #5a6b78;
+        }
+
+        .post-item .frase-destacada {
+            font-family: 'DM Serif Display', serif;
+            font-style: italic;
+            color: #3d5a4b;
+            font-size: 1.15rem;
+            padding: 1rem 0 1rem 2rem;
+            border-left: 4px solid #dba27a;
+            margin: 0.8rem 0 1.2rem 0;
+            background: rgba(218, 162, 122, 0.04);
+            border-radius: 0 12px 12px 0;
+            line-height: 1.6;
+            pointer-events: none;
+        }
+
+        .post-item p {
+            color: #2d3f4a;
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+            line-height: 1.9;
+            font-size: 1rem;
+            pointer-events: none;
+        }
+
+        .post-item .leer-mas {
+            display: inline-block;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            color: #0f1e2e;
+            text-decoration: none;
+            border-bottom: 2px solid #dba27a;
+            padding-bottom: 0.2rem;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+            letter-spacing: 0.3px;
+            cursor: pointer;
+            background: none;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+
+        .post-item .leer-mas:hover {
+            color: #c9774d;
+            border-bottom-color: #c9774d;
+            padding-left: 0.4rem;
+            padding-right: 0.4rem;
+        }
+
+        /* ============================================================
+                   BARRA LATERAL — TARJETAS DE LIBRE USO
+                   ============================================================ */
+        .sidebar {
+            flex: 1;
+            min-width: 240px;
+        }
+
+        .sidebar-card {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 2.2rem 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid rgba(15, 30, 46, 0.04);
+            box-shadow: 0 4px 16px rgba(15, 30, 46, 0.03);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .sidebar-card:hover {
+            box-shadow: 0 8px 24px rgba(15, 30, 46, 0.06);
+        }
+
+        .sidebar-card h3 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #0f1e2e;
+            margin-bottom: 1.2rem;
+            border-bottom: 2px solid #dba27a;
+            padding-bottom: 0.5rem;
+            display: inline-block;
+        }
+
+        /* --- Perfil con foto --- */
+        .perfil {
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .perfil-imagen {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #dba27a;
+            box-shadow: 0 8px 20px rgba(218, 162, 122, 0.15);
+            margin-bottom: 0.8rem;
+            background: #e8e2d8;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #8a7a6a;
+        }
+
+        .perfil-nombre {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #0f1e2e;
+            letter-spacing: -0.3px;
+        }
+
+        .perfil-desc {
+            color: #3d515e;
+            font-size: 0.9rem;
+            margin-top: 0.3rem;
+            font-weight: 400;
+            line-height: 1.7;
+        }
+
+        .perfil-frase {
+            font-family: 'DM Serif Display', serif;
+            font-style: italic;
+            color: #3d5a4b;
+            background: rgba(90, 122, 107, 0.05);
+            padding: 0.8rem 1.2rem;
+            border-radius: 16px;
+            margin: 1rem 0 0.5rem;
+            border-left: 4px solid #dba27a;
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+            text-align: left;
+        }
+
+        .perfil-frase:hover {
+            background: rgba(90, 122, 107, 0.10);
+        }
+
+        /* --- TARJETAS DE LIBRE USO --- */
+        .tarjeta-libre {
+            background: #faf8f6;
+            border-radius: 16px;
+            padding: 1.8rem;
+            text-align: center;
+            border: 1px dashed #dba27a;
+            min-height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #5a6b78;
+            transition: all 0.3s ease;
+        }
+
+        .tarjeta-libre:hover {
+            background: #f5f0eb;
+            border-color: #c9774d;
+        }
+
+        .tarjeta-libre .icono {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .tarjeta-libre .texto {
+            font-size: 0.95rem;
+            font-weight: 400;
+            line-height: 1.6;
+        }
+
+        .tarjeta-libre .texto strong {
+            color: #0f1e2e;
+            font-weight: 600;
+        }
+
+        .tarjeta-libre .texto .editable {
+            color: #dba27a;
+            font-style: italic;
+            cursor: pointer;
+            border-bottom: 1px dashed #dba27a;
+        }
+
+        .tarjeta-libre .texto .editable:hover {
+            color: #c9774d;
+        }
+
+        /* Segunda tarjeta con estilo diferente */
+        .tarjeta-libre.secundaria {
+            border-style: solid;
+            border-color: rgba(218, 162, 122, 0.20);
+            background: rgba(255, 255, 255, 0.5);
+            min-height: 80px;
+        }
+
+        .tarjeta-libre.secundaria:hover {
+            background: rgba(255, 255, 255, 0.8);
+            border-color: #dba27a;
+        }
+
+        /* ============================================================
+                   MODAL PARA LEER ARTÍCULO COMPLETO
+                   ============================================================ */
+        .modal-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 30, 46, 0.7);
+            backdrop-filter: blur(8px);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .modal-overlay.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: #ffffff;
+            border-radius: 32px;
+            max-width: 800px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 3rem;
+            box-shadow: 0 40px 80px rgba(0,0,0,0.30);
+            position: relative;
+        }
+
+        .modal-content::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .modal-content::-webkit-scrollbar-track {
+            background: #f1f0ec;
+            border-radius: 10px;
+        }
+
+        .modal-content::-webkit-scrollbar-thumb {
+            background: #dba27a;
+            border-radius: 10px;
+        }
+
+        .modal-content .cerrar-modal {
+            position: absolute;
+            top: 1.2rem;
+            right: 1.5rem;
+            background: none;
+            border: none;
+            font-size: 2rem;
+            color: #6b7f8e;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            font-family: 'Inter', sans-serif;
+            line-height: 1;
+        }
+
+        .modal-content .cerrar-modal:hover {
+            color: #0f1e2e;
+        }
+
+        .modal-content .modal-titulo {
+            font-family: 'DM Serif Display', serif;
+            font-size: 2rem;
+            font-weight: 400;
+            color: #0f1e2e;
+            margin-bottom: 0.5rem;
+            padding-right: 2rem;
+        }
+
+        .modal-content .modal-meta {
+            font-size: 0.85rem;
+            color: #6b7f8e;
+            margin-bottom: 1.2rem;
+        }
+
+        .modal-content .modal-imagen {
+            width: 100%;
+            border-radius: 16px;
+            margin-bottom: 1.5rem;
+            max-height: 400px;
+            object-fit: cover;
+        }
+
+        .modal-content .modal-frase {
+            font-family: 'DM Serif Display', serif;
+            font-style: italic;
+            color: #3d5a4b;
+            font-size: 1.2rem;
+            padding: 1rem 0 1rem 2rem;
+            border-left: 4px solid #dba27a;
+            margin: 0 0 1.5rem 0;
+            background: rgba(218, 162, 122, 0.04);
+            border-radius: 0 12px 12px 0;
+            line-height: 1.6;
+        }
+
+        .modal-content .modal-body {
+            color: #2d3f4a;
+            font-size: 1.05rem;
+            line-height: 1.9;
+        }
+
+        .modal-content .modal-body p {
+            margin-bottom: 1.2rem;
+        }
+
+        /* ============================================================
+                   PANEL DE ADMINISTRACIÓN
+                   ============================================================ */
+        .admin-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(15, 30, 46, 0.6);
+            backdrop-filter: blur(8px);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5rem;
+        }
+
+        .admin-overlay.active {
+            display: flex;
+        }
+
+        .admin-modal {
+            background: #ffffff;
+            border-radius: 40px;
+            max-width: 700px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            padding: 2.5rem;
+            box-shadow: 0 40px 80px rgba(0,0,0,0.25);
+            position: relative;
+        }
+
+        .admin-modal::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .admin-modal::-webkit-scrollbar-track {
+            background: #f1f0ec;
+            border-radius: 10px;
+        }
+
+        .admin-modal::-webkit-scrollbar-thumb {
+            background: #dba27a;
+            border-radius: 10px;
+        }
+
+        .admin-modal .cerrar-admin {
+            position: absolute;
+            top: 1.2rem;
+            right: 1.5rem;
+            background: none;
+            border: none;
+            font-size: 1.8rem;
+            color: #6b7f8e;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .admin-modal .cerrar-admin:hover {
+            color: #0f1e2e;
+        }
+
+        .admin-login {
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+
+        .admin-login h2 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 2rem;
+            font-weight: 400;
+            color: #0f1e2e;
+            margin-bottom: 0.3rem;
+        }
+
+        .admin-login .login-sub {
+            color: #6b7f8e;
+            font-size: 0.9rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .admin-login .login-error {
+            color: #c0392b;
+            font-size: 0.85rem;
+            margin-top: 0.5rem;
+            display: none;
+        }
+
+        .admin-login .login-error.active {
+            display: block;
+        }
+
+        .admin-login input {
+            width: 100%;
+            max-width: 300px;
+            padding: 0.7rem 1.2rem;
+            border: 1px solid #e2e4e6;
+            border-radius: 12px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            transition: border 0.3s ease;
+            background: #faf8f6;
+            margin-bottom: 0.8rem;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .admin-login input:focus {
+            outline: none;
+            border-color: #dba27a;
+            background: #ffffff;
+            box-shadow: 0 0 0 4px rgba(218, 162, 122, 0.08);
+        }
+
+        .admin-login .btn-login {
+            background: #0f1e2e;
+            color: #f0ece3;
+            border: none;
+            padding: 0.7rem 3rem;
+            border-radius: 40px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .admin-login .btn-login:hover {
+            background: #1a2f42;
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(15, 30, 46, 0.15);
+        }
+
+        .admin-content {
+            display: none;
+        }
+
+        .admin-content.active {
+            display: block;
+        }
+
+        .admin-content .admin-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .admin-content .admin-header h2 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: #0f1e2e;
+        }
+
+        .admin-content .admin-header .btn-logout {
+            background: none;
+            border: 1px solid #e2e4e6;
+            padding: 0.3rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            color: #6b7f8e;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .admin-content .admin-header .btn-logout:hover {
+            background: #f1f0ec;
+            color: #0f1e2e;
+        }
+
+        .admin-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .admin-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .admin-form label {
+            display: block;
+            font-weight: 500;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #3d515e;
+            margin-bottom: 0.2rem;
+        }
+
+        .admin-form input,
+        .admin-form textarea,
+        .admin-form select {
+            width: 100%;
+            padding: 0.5rem 1rem;
+            border: 1px solid #e2e4e6;
+            border-radius: 12px;
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            transition: border 0.3s ease;
+            background: #faf8f6;
+            margin-bottom: 0.8rem;
+        }
+
+        .admin-form input:focus,
+        .admin-form textarea:focus,
+        .admin-form select:focus {
+            outline: none;
+            border-color: #dba27a;
+            background: #ffffff;
+            box-shadow: 0 0 0 4px rgba(218, 162, 122, 0.08);
+        }
+
+        .admin-form textarea {
+            resize: vertical;
+            min-height: 60px;
+        }
+
+        .admin-form .file-input-wrapper {
+            position: relative;
+            margin-bottom: 0.8rem;
+        }
+
+        .admin-form .file-input-wrapper input[type="file"] {
+            position: absolute;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .admin-form .file-input-wrapper .file-label {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            padding: 0.5rem 1rem;
+            border: 2px dashed #dba27a;
+            border-radius: 12px;
+            background: rgba(218, 162, 122, 0.04);
+            color: #6b7f8e;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .admin-form .file-input-wrapper .file-label:hover {
+            background: rgba(218, 162, 122, 0.08);
+            border-color: #c9774d;
+        }
+
+        .admin-form .file-input-wrapper .file-label .file-name {
+            color: #0f1e2e;
+            font-weight: 500;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .admin-form .preview-imagen {
+            max-width: 100%;
+            max-height: 120px;
+            border-radius: 12px;
+            margin: 0.5rem 0 0.8rem;
+            object-fit: cover;
+            border: 1px solid #e2e4e6;
+            display: none;
+        }
+
+        .admin-form .preview-imagen.active {
+            display: block;
+        }
+
+        .admin-form .btn-submit {
+            background: #0f1e2e;
+            color: #f0ece3;
+            border: none;
+            padding: 0.6rem 2rem;
+            border-radius: 40px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .admin-form .btn-submit:hover {
+            background: #1a2f42;
+            transform: scale(1.02);
+            box-shadow: 0 8px 20px rgba(15, 30, 46, 0.15);
+        }
+
+        .admin-form .btn-submit.btn-editar {
+            background: #dba27a;
+            color: #0f1e2e;
+        }
+
+        .admin-form .btn-submit.btn-editar:hover {
+            background: #c9774d;
+        }
+
+        .admin-form .btn-cancelar {
+            background: none;
+            border: 1px solid #e2e4e6;
+            padding: 0.6rem 1.5rem;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            color: #6b7f8e;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+            margin-left: 0.5rem;
+        }
+
+        .admin-form .btn-cancelar:hover {
+            background: #f1f0ec;
+            color: #0f1e2e;
+        }
+
+        .admin-lista {
+            max-height: 400px;
+            overflow-y: auto;
+            padding-right: 0.5rem;
+        }
+
+        .admin-lista::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .admin-lista::-webkit-scrollbar-track {
+            background: #f1f0ec;
+            border-radius: 10px;
+        }
+
+        .admin-lista::-webkit-scrollbar-thumb {
+            background: #dba27a;
+            border-radius: 10px;
+        }
+
+        .admin-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.6rem 1rem;
+            background: #faf8f6;
+            border-radius: 12px;
+            margin-bottom: 0.5rem;
+            transition: background 0.3s ease;
+            border-left: 3px solid #dba27a;
+            gap: 0.5rem;
+        }
+
+        .admin-item:hover {
+            background: #f5f2ec;
+        }
+
+        .admin-item .info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .admin-item .info .titulo {
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: #0f1e2e;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .admin-item .info .categoria {
+            font-size: 0.65rem;
+            color: #6b7f8e;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .admin-item .info .tiene-img {
+            font-size: 0.6rem;
+            color: #5a7a6b;
+            margin-left: 0.3rem;
+        }
+
+        .admin-item .acciones {
+            display: flex;
+            gap: 0.4rem;
+            flex-shrink: 0;
+        }
+
+        .admin-item .acciones button {
+            background: none;
+            border: none;
+            padding: 0.2rem 0.6rem;
+            border-radius: 30px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .admin-item .acciones .btn-edit {
+            color: #dba27a;
+            background: rgba(218, 162, 122, 0.08);
+        }
+
+        .admin-item .acciones .btn-edit:hover {
+            background: rgba(218, 162, 122, 0.20);
+        }
+
+        .admin-item .acciones .btn-delete {
+            color: #c0392b;
+            background: rgba(192, 57, 43, 0.06);
+        }
+
+        .admin-item .acciones .btn-delete:hover {
+            background: rgba(192, 57, 43, 0.14);
+        }
+
+        .admin-empty {
+            color: #6b7f8e;
+            text-align: center;
+            padding: 1.5rem 0;
+            font-style: italic;
+            font-size: 0.9rem;
+        }
+
+        /* ============================================================
+                   FALDÓN — SOLO LA LÍNEA DE LA CAPTURA (SIN CONTÁCTAME NI RRSS)
+                   ============================================================ */
+        .footer-final {
+            max-width: 1200px;
+            margin: 1.5rem auto 0;
+            padding: 0 2.5rem 2.5rem;
+        }
+
+        .footer-final-inner {
+            background: linear-gradient(165deg, #0f1e2e 0%, #1a2f42 100%);
+            border-radius: 60px 60px 30px 30px;
+            padding: 1.8rem 2.5rem;
+            color: #f0ece3;
+            text-align: center;
+            box-shadow: 0 12px 36px rgba(15, 30, 46, 0.12);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer-final-inner::after {
+            content: '🍂';
+            position: absolute;
+            bottom: -20px;
+            right: -10px;
+            font-size: 6rem;
+            opacity: 0.04;
+            transform: rotate(-10deg);
+            pointer-events: none;
+        }
+
+        /* FALDÓN — SOLO LA LÍNEA EXACTA DE LA CAPTURA */
+        .footer-faldon {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.85rem;
+            color: #7a97a8;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.3rem 0.8rem;
+        }
+
+        .footer-faldon .faldon-nombre {
+            color: #dba27a;
+            font-weight: 400;
+        }
+
+        .footer-faldon .faldon-autor {
+            color: #7a97a8;
+        }
+
+        .footer-faldon .faldon-copy {
+            opacity: 0.5;
+            font-size: 0.75rem;
+            letter-spacing: 0.3px;
+        }
+
+        .footer-faldon .btn-admin-faldon {
+            background: rgba(218, 162, 122, 0.08);
+            color: #7a97a8;
+            border: 1px solid rgba(255,255,255,0.06);
+            padding: 0.1rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.65rem;
+            font-weight: 400;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+            text-decoration: none;
+            letter-spacing: 0.3px;
+        }
+
+        .footer-faldon .btn-admin-faldon:hover {
+            background: rgba(218, 162, 122, 0.15);
+            color: #f0ece3;
+            border-color: rgba(218, 162, 122, 0.20);
+        }
+
+        /* ============================================================
+                   RESPONSIVE
+                   ============================================================ */
+        @media (max-width: 992px) {
+            .container {
+                padding: 2rem 1.5rem;
+                gap: 2.5rem;
+            }
+
+            header {
+                padding: 3rem 1.8rem 2.5rem;
+                border-radius: 0 0 50px 50px;
+            }
+
+            .logo h1 {
+                font-size: 2.6rem;
+            }
+
+            .header-categorias {
+                gap: 1rem 1.8rem;
+                font-size: 0.75rem;
+            }
+
+            .admin-modal {
+                padding: 2rem;
+                margin: 1rem;
+            }
+
+            .footer-final {
+                padding: 0 1.5rem 2rem;
+            }
+
+            .footer-final-inner {
+                padding: 1.5rem 1.8rem;
+                border-radius: 40px 40px 24px 24px;
+            }
+
+            .footer-faldon {
+                font-size: 0.75rem;
+                gap: 0.2rem 0.5rem;
+            }
+
+            .modal-content {
+                padding: 2rem;
+            }
+
+            .modal-content .modal-titulo {
+                font-size: 1.6rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+
+            .logo h1 {
+                font-size: 2.2rem;
+            }
+
+            .header-social {
+                gap: 0.4rem;
+            }
+
+            .header-social a {
+                width: 28px;
+                height: 28px;
+            }
+
+            .header-social a svg {
+                width: 12px;
+                height: 12px;
+            }
+
+            .header-categorias {
+                gap: 0.6rem 1.2rem;
+                font-size: 0.65rem;
+                margin-top: 1.2rem;
+                padding-top: 1rem;
+            }
+
+            .post-item {
+                padding: 2rem 1.8rem 1.8rem;
+                border-radius: 20px;
+            }
+
+            .post-item h2 {
+                font-size: 1.7rem;
+            }
+
+            .post-item .frase-destacada {
+                font-size: 1rem;
+                padding-left: 1.2rem;
+            }
+
+            .sidebar-card {
+                padding: 1.5rem;
+            }
+
+            .tarjeta-libre {
+                padding: 1.2rem;
+                min-height: 80px;
+            }
+
+            .tarjeta-libre .icono {
+                font-size: 2rem;
+            }
+
+            .tarjeta-libre .texto {
+                font-size: 0.85rem;
+            }
+
+            .admin-modal {
+                padding: 1.5rem;
+                border-radius: 30px;
+            }
+
+            .admin-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .admin-content .admin-header h2 {
+                font-size: 1.4rem;
+            }
+
+            .footer-final {
+                padding: 0 1.2rem 1.5rem;
+            }
+
+            .footer-final-inner {
+                padding: 1.2rem 1.2rem;
+                border-radius: 30px 30px 20px 20px;
+            }
+
+            .footer-faldon {
+                font-size: 0.65rem;
+                gap: 0.2rem 0.4rem;
+            }
+
+            .footer-faldon .faldon-copy {
+                font-size: 0.6rem;
+            }
+
+            .footer-faldon .btn-admin-faldon {
+                font-size: 0.55rem;
+                padding: 0.1rem 0.8rem;
+            }
+
+            .modal-content {
+                padding: 1.5rem;
+                margin: 1rem;
+                border-radius: 24px;
+            }
+
+            .modal-content .modal-titulo {
+                font-size: 1.4rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 1rem 0.8rem;
+                gap: 1.8rem;
+            }
+
+            .logo h1 {
+                font-size: 1.8rem;
+            }
+
+            .header-categorias {
+                gap: 0.4rem 0.8rem;
+                font-size: 0.55rem;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+            }
+
+            .header-social a {
+                width: 24px;
+                height: 24px;
+            }
+
+            .header-social a svg {
+                width: 10px;
+                height: 10px;
+            }
+
+            .post-item {
+                padding: 1.5rem 1.2rem 1.2rem;
+            }
+
+            .post-item h2 {
+                font-size: 1.4rem;
+            }
+
+            .post-item .meta {
+                font-size: 0.7rem;
+                gap: 0.6rem;
+            }
+
+            .post-item .frase-destacada {
+                font-size: 0.95rem;
+                padding-left: 0.8rem;
+            }
+
+            .sidebar-card {
+                padding: 1.2rem;
+            }
+
+            .tarjeta-libre {
+                padding: 1rem;
+                min-height: 70px;
+            }
+
+            .tarjeta-libre .icono {
+                font-size: 1.8rem;
+            }
+
+            .tarjeta-libre .texto {
+                font-size: 0.8rem;
+            }
+
+            .admin-modal {
+                padding: 1.2rem;
+                border-radius: 24px;
+                max-height: 95vh;
+            }
+
+            .admin-content .admin-header h2 {
+                font-size: 1.2rem;
+            }
+
+            .admin-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.4rem;
+            }
+
+            .admin-item .acciones {
+                width: 100%;
+                justify-content: flex-end;
+            }
+
+            .admin-login h2 {
+                font-size: 1.5rem;
+            }
+
+            .admin-login input {
+                max-width: 100%;
+            }
+
+            .footer-final {
+                padding: 0 0.5rem 1rem;
+            }
+
+            .footer-final-inner {
+                padding: 1rem 0.8rem;
+                border-radius: 24px 24px 16px 16px;
+            }
+
+            .footer-faldon {
+                font-size: 0.55rem;
+                gap: 0.1rem 0.3rem;
+            }
+
+            .footer-faldon .faldon-copy {
+                font-size: 0.5rem;
+            }
+
+            .footer-faldon .btn-admin-faldon {
+                font-size: 0.5rem;
+                padding: 0.05rem 0.6rem;
+            }
+
+            .modal-content {
+                padding: 1.2rem;
+                margin: 0.5rem;
+                border-radius: 20px;
+            }
+
+            .modal-content .modal-titulo {
+                font-size: 1.2rem;
+            }
+
+            .modal-content .modal-frase {
+                font-size: 1rem;
+                padding-left: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================================
+    HEADER
+    ============================================================ -->
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <h1>🍂 Tormenta de <span>Hojas</span></h1>
+                <p><i>✦</i> Salud, hábitos de vida y finanzas</p>
+            </div>
+
+            <div class="header-social">
+                <a href="https://wa.me/34654080555" class="whatsapp" target="_blank" aria-label="WhatsApp">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                </a>
+                <a href="mailto:tormentadehojas@icloud.com" class="email" target="_blank" aria-label="Email">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"/>
+                        <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"/>
+                    </svg>
+                </a>
+                <a href="https://facebook.com/joseluis.diazvidal" class="facebook" target="_blank" aria-label="Facebook">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                    </svg>
+                </a>
+                <a href="https://instagram.com/jldvinst2" class="instagram" target="_blank" aria-label="Instagram">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="header-categorias">
+            <span>Salud</span>
+            <span class="separador">|</span>
+            <span>Hábitos de vida</span>
+            <span class="separador">|</span>
+            <span>Finanzas</span>
+            <span class="separador">|</span>
+            <span>Bienestar</span>
+            <span class="separador">|</span>
+            <span>Reflexión</span>
+        </div>
+    </header>
+
+    <!-- ============================================================
+    CONTENEDOR PRINCIPAL
+    ============================================================ -->
+    <div class="container">
+
+        <!-- ===== COLUMNA PRINCIPAL ===== -->
+        <main class="blog-main" id="blogMain">
+            <!-- Los artículos se cargan aquí con JavaScript -->
+        </main>
+
+        <!-- ===== BARRA LATERAL ===== -->
+        <aside class="sidebar">
+
+            <!-- SOBRE MÍ -->
+            <div class="sidebar-card" id="sobre-mi">
+                <h3>✧ Sobre mí</h3>
+                <div class="perfil">
+                    <div class="perfil-imagen" style="font-size:3.2rem;">🍃</div>
+                    <div class="perfil-nombre">Jldv1508</div>
+                    <div class="perfil-desc">
+                        Creador de <strong>Tormenta de Hojas</strong>. Un aprendiz que camina entre la salud, el dinero y el tiempo, intentando encontrar el equilibrio sin perder la sonrisa.
+                    </div>
+                    <div class="perfil-frase" id="frase-aleatoria">
+                        “Pequeñas decisiones de hoy, cosechan grandes cambios mañana.”
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA DE LIBRE USO 1 -->
+            <div class="sidebar-card">
+                <h3>📌 Espacio libre</h3>
+                <div class="tarjeta-libre">
+                    <div class="icono">🌱</div>
+                    <div class="texto">
+                        <strong>Personaliza esta tarjeta</strong><br />
+                        <span class="editable">Escribe aquí lo que quieras</span><br />
+                        <span style="font-size:0.8rem; color:#8a9aa8;">(puedes editar este contenido en el HTML)</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TARJETA DE LIBRE USO 2 (NUEVA) -->
+            <div class="sidebar-card">
+                <h3>📌 Otro espacio</h3>
+                <div class="tarjeta-libre secundaria">
+                    <div class="icono">📖</div>
+                    <div class="texto">
+                        <strong>Segunda tarjeta</strong><br />
+                        <span class="editable">Más contenido para ti</span><br />
+                        <span style="font-size:0.8rem; color:#8a9aa8;">(edita este texto en el HTML)</span>
+                    </div>
+                </div>
+            </div>
+
+        </aside>
+
+    </div>
+
+    <!-- ============================================================
+    FALDÓN — SOLO LA LÍNEA DE LA CAPTURA (SIN CONTÁCTAME NI RRSS)
+    ============================================================ -->
+    <div class="footer-final">
+        <div class="footer-final-inner">
+
+            <!-- FALDÓN — SOLO LA LÍNEA EXACTA DE LA CAPTURA -->
+            <div class="footer-faldon">
+                <span class="faldon-nombre">Tormenta de Hojas</span>
+                <span class="faldon-autor">Jldv1508</span>
+                <span class="faldon-copy">© 2026 — Hecho con salvá, refuxián y un poco de caos.</span>
+                <button class="btn-admin-faldon" onclick="abrirAdmin()">Admin</button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ============================================================
+    MODAL PARA LEER ARTÍCULO COMPLETO
+    ============================================================ -->
+    <div class="modal-overlay" id="modalArticulo">
+        <div class="modal-content">
+            <button class="cerrar-modal" onclick="cerrarModal()">✕</button>
+            <div id="modalContent">
+                <!-- Se llena con JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================================
+    ADMIN OVERLAY
+    ============================================================ -->
+    <div class="admin-overlay" id="adminOverlay">
+        <div class="admin-modal">
+
+            <button class="cerrar-admin" onclick="cerrarAdmin()">✕</button>
+
+            <div class="admin-login" id="adminLogin">
+                <h2>🔐 Acceso restringido</h2>
+                <p class="login-sub">Introduce tus credenciales para gestionar el blog</p>
+                <input type="text" id="loginUser" placeholder="Usuario" />
+                <input type="password" id="loginPass" placeholder="Contraseña" />
+                <div class="login-error" id="loginError">❌ Usuario o contraseña incorrectos</div>
+                <button class="btn-login" onclick="loginAdmin()">Entrar</button>
+            </div>
+
+            <div class="admin-content" id="adminContent">
+                <div class="admin-header">
+                    <h2>📝 Panel de administración</h2>
+                    <button class="btn-logout" onclick="logoutAdmin()">Cerrar sesión</button>
+                </div>
+                <p style="color:#6b7f8e; font-size:0.85rem; margin-bottom:1.5rem;">
+                    Gestiona los artículos de tu blog. Los cambios se guardan automáticamente.
+                </p>
+
+                <div class="admin-grid">
+                    <div>
+                        <form class="admin-form" id="postForm">
+                            <input type="hidden" id="editIndex" value="-1" />
+
+                            <label for="postCategoria">Categoría</label>
+                            <input type="text" id="postCategoria" placeholder="Ej: Salud · Hábitos" value="Salud · Hábitos" />
+
+                            <label for="postTitulo">Título *</label>
+                            <input type="text" id="postTitulo" placeholder="Título del artículo" required />
+
+                            <label for="postFecha">Fecha</label>
+                            <input type="text" id="postFecha" placeholder="Ej: 3 de julio, 2026" />
+
+                            <label for="postLectura">Tiempo de lectura</label>
+                            <input type="text" id="postLectura" placeholder="Ej: 3 min de lectura" />
+
+                            <label for="postFrase">Frase destacada</label>
+                            <input type="text" id="postFrase" placeholder="“Tu frase aquí...”" />
+
+                            <label>Imagen del artículo</label>
+                            <div class="file-input-wrapper">
+                                <input type="file" id="postImagen" accept="image/*" />
+                                <div class="file-label">
+                                    <span>📸</span>
+                                    <span>Seleccionar imagen</span>
+                                    <span class="file-name" id="fileNombre">(opcional)</span>
+                                </div>
+                            </div>
+                            <img id="previewImagen" class="preview-imagen" alt="Vista previa" />
+
+                            <label for="postExtracto">Extracto del artículo</label>
+                            <textarea id="postExtracto" placeholder="Escribe el extracto que aparecerá en la portada..." rows="3"></textarea>
+
+                            <label for="postContenido">Contenido completo del artículo</label>
+                            <textarea id="postContenido" placeholder="Escribe el contenido completo del artículo (se verá al hacer clic en Seguir leyendo)..." rows="6"></textarea>
+
+                            <div>
+                                <button type="submit" class="btn-submit" id="submitBtn">➕ Publicar artículo</button>
+                                <button type="button" class="btn-cancelar" id="cancelarBtn" style="display:none;" onclick="cancelarEdicion()">Cancelar</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div>
+                        <h3 style="font-family:'DM Serif Display',serif; font-weight:400; font-size:1.2rem; margin-bottom:1rem; color:#0f1e2e;">📋 Mis artículos</h3>
+                        <div class="admin-lista" id="adminLista">
+                            <div class="admin-empty">No hay artículos todavía. ¡Crea el primero!</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ============================================================
+    JAVASCRIPT
+    ============================================================ -->
+    <script>
+        // ============================================================
+        // CONFIGURACIÓN
+        // ============================================================
+        const USUARIO_VALIDO = 'admin';
+        const PASS_VALIDO = '1234';
+        const STORAGE_KEY = 'tormenta_articulos_v3';
+
+        // ============================================================
+        // 1. GESTIÓN DE ARTÍCULOS
+        // ============================================================
+
+        function getArticulos() {
+            try {
+                const data = localStorage.getItem(STORAGE_KEY);
+                return data ? JSON.parse(data) : [];
+            } catch {
+                return [];
+            }
+        }
+
+        function saveArticulos(articulos) {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(articulos));
+        }
+
+        // ============================================================
+        // 2. RENDERIZAR ARTÍCULOS EN EL BLOG
+        // ============================================================
+
+        function renderBlog() {
+            let articulos = getArticulos();
+            const container = document.getElementById('blogMain');
+            if (!container) return;
+
+            if (articulos.length === 0) {
+                const defaults = [{
+                    categoria: 'Salud · Hábitos',
+                    titulo: 'La respiración consciente: tu mejor aliada para el estrés diario',
+                    fecha: '3 de julio, 2026',
+                    lectura: '3 min de lectura',
+                    frase: '“La calma no es ausencia de ruido, sino presencia de atención.”',
+                    extracto: 'Llevamos el estrés como un compañero más, pero no tiene por qué ser así. Hace unos meses descubrí que respirar de forma consciente (sí, algo tan simple) puede reducir la ansiedad y mejorar la toma de decisiones. Te comparto la rutina de 5 minutos que hago cada mañana, esa que me devuelve a casa cuando todo parece desbordarse.',
+                    contenido: '<p>Llevamos el estrés como un compañero más, pero no tiene por qué ser así. Hace unos meses descubrí que respirar de forma consciente (sí, algo tan simple) puede reducir la ansiedad y mejorar la toma de decisiones.</p><p>Te comparto la rutina de 5 minutos que hago cada mañana, esa que me devuelve a casa cuando todo parece desbordarse. Primero, busco un lugar tranquilo. Cierro los ojos. Inhala profundamente por la nariz durante 4 segundos, mantén 7 segundos y exhala por la boca durante 8 segundos. Repito esto 5 veces.</p><p>Los resultados no fueron inmediatos, pero con la práctica constante noté cómo mi mente se calmaba y mis decisiones eran más claras. Lo mejor es que puedes hacerlo en cualquier lugar: en el metro, en la oficina, o antes de dormir.</p>',
+                    imagen: ''
+                }, {
+                    categoria: 'Finanzas · Hábitos',
+                    titulo: '5 hábitos financieros que cambiaron mi relación con el dinero',
+                    fecha: '1 de julio, 2026',
+                    lectura: '4 min de lectura',
+                    frase: '“El dinero no es el objetivo, es el medio para una vida con sentido.”',
+                    extracto: 'No se trata de ganar más, sino de administrar mejor. Durante los últimos dos años puse en práctica estos 5 hábitos sencillos (pero poderosos) que transformaron mi estabilidad financiera. Desde el registro de gastos hasta la regla del 50/30/20 adaptada a mi realidad.',
+                    contenido: '<p>No se trata de ganar más, sino de administrar mejor. Durante los últimos dos años puse en práctica estos 5 hábitos sencillos (pero poderosos) que transformaron mi estabilidad financiera.</p><p>1. Registro diario de gastos: anotar cada pequeño gasto me hizo consciente de dónde se iba mi dinero. 2. La regla del 50/30/20 adaptada: 50% para necesidades, 30% para deseos y 20% para ahorro e inversión. 3. Revisión semanal de finanzas: cada domingo dedico 15 minutos a revisar mis cuentas.</p><p>4. Compras con intención: antes de comprar algo, espero 48 horas. 5. Educación financiera: dedico tiempo a leer sobre finanzas personales.</p><p>Lo más importante: empecé a dormir mejor. El estrés financiero disminuyó y pude enfocarme en lo que realmente importa.</p>',
+                    imagen: ''
+                }, {
+                    categoria: 'Vida · Reflexión',
+                    titulo: 'El equilibrio que nadie enseña: salud, dinero y tiempo',
+                    fecha: '28 de junio, 2026',
+                    lectura: '5 min de lectura',
+                    frase: '“La vida no es una balanza, es una danza. A veces un paso adelante, a veces un paso al lado.”',
+                    extracto: 'Solemos pensar que la salud, el dinero y el tiempo son recursos separados. Pero en realidad forman un ecosistema: cuando uno falla, los otros se resienten. Una perspectiva para tomar mejores decisiones sin sentir que sacrifico un área por otra.',
+                    contenido: '<p>Solemos pensar que la salud, el dinero y el tiempo son recursos separados. Pero en realidad forman un ecosistema: cuando uno falla, los otros se resienten.</p><p>He aprendido que el verdadero equilibrio no se encuentra, se construye día a día. A veces hay que invertir dinero en salud (como ir al gimnasio o comprar alimentos de calidad), otras veces hay que invertir tiempo en aprender sobre finanzas, y siempre hay que dedicar tiempo a cuidar nuestra salud mental y física.</p><p>La clave está en no ver estas áreas como compartimentos estancos, sino como partes de un todo que se retroalimentan. Cuando mejoro mi salud, tengo más energía para trabajar y generar ingresos. Cuando mejoro mis finanzas, tengo menos estrés y mejor salud.</p><p>Porque al final, de lo que se trata es de vivir, no de sobrevivir.</p>',
+                    imagen: ''
+                }];
+                saveArticulos(defaults);
+                articulos = defaults;
+            }
+
+            container.innerHTML = articulos.map((art, index) => `
+                        <article class="post-item" data-index="${index}" onclick="abrirModal(${index})">
+                            <span class="categoria-tag">${art.categoria || 'General'}</span>
+                            ${art.imagen ? `<img src="${art.imagen}" alt="${art.titulo}" class="post-imagen" />` : ''}
+                            <h2><a href="javascript:void(0)" onclick="event.stopPropagation(); abrirModal(${index})">${art.titulo || 'Sin título'}</a></h2>
+                            <div class="meta">
+                                <span>📅 ${art.fecha || 'Fecha no especificada'}</span>
+                                <span class="lectura">⏱️ ${art.lectura || 'Tiempo de lectura'}</span>
+                            </div>
+                            ${art.frase ? `<div class="frase-destacada">${art.frase}</div>` : ''}
+                            <p>${art.extracto || ''}</p>
+                            <button class="leer-mas" onclick="event.stopPropagation(); abrirModal(${index})">Seguir leyendo →</button>
+                        </article>
+                    `).join('');
+        }
+
+        // ============================================================
+        // 3. MODAL PARA LEER ARTÍCULO COMPLETO
+        // ============================================================
+
+        function abrirModal(index) {
+            const articulos = getArticulos();
+            const art = articulos[index];
+            if (!art) return;
+
+            const modal = document.getElementById('modalArticulo');
+            const content = document.getElementById('modalContent');
+
+            content.innerHTML = `
+                        <h2 class="modal-titulo">${art.titulo || 'Sin título'}</h2>
+                        <div class="modal-meta">📅 ${art.fecha || 'Fecha no especificada'} · ⏱️ ${art.lectura || 'Tiempo de lectura'}</div>
+                        ${art.imagen ? `<img src="${art.imagen}" alt="${art.titulo}" class="modal-imagen" />` : ''}
+                        ${art.frase ? `<div class="modal-frase">${art.frase}</div>` : ''}
+                        <div class="modal-body">
+                            ${art.contenido || art.extracto || '<p>No hay contenido completo disponible.</p>'}
+                        </div>
+                    `;
+
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function cerrarModal() {
+            document.getElementById('modalArticulo').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                cerrarModal();
+                cerrarAdmin();
+            }
+        });
+
+        document.getElementById('modalArticulo').addEventListener('click', function(e) {
+            if (e.target === this) {
+                cerrarModal();
+            }
+        });
+
+        // ============================================================
+        // 4. RENDERIZAR LISTA EN ADMIN
+        // ============================================================
+
+        function renderAdminList() {
+            const articulos = getArticulos();
+            const container = document.getElementById('adminLista');
+            if (!container) return;
+
+            if (articulos.length === 0) {
+                container.innerHTML = `<div class="admin-empty">No hay artículos todavía. ¡Crea el primero!</div>`;
+                return;
+            }
+
+            container.innerHTML = articulos.map((art, index) => `
+                        <div class="admin-item" data-index="${index}">
+                            <div class="info">
+                                <div class="titulo">${art.titulo || 'Sin título'} ${art.imagen ? '📸' : ''}</div>
+                                <div class="categoria">${art.categoria || 'General'}</div>
+                            </div>
+                            <div class="acciones">
+                                <button class="btn-edit" onclick="editarArticulo(${index})">✏️ Editar</button>
+                                <button class="btn-delete" onclick="eliminarArticulo(${index})">🗑️</button>
+                            </div>
+                        </div>
+                    `).join('');
+        }
+
+        // ============================================================
+        // 5. CRUD
+        // ============================================================
+
+        function eliminarArticulo(index) {
+            if (!confirm('¿Seguro que quieres eliminar este artículo?')) return;
+            const articulos = getArticulos();
+            articulos.splice(index, 1);
+            saveArticulos(articulos);
+            renderBlog();
+            renderAdminList();
+            cancelarEdicion();
+        }
+
+        function editarArticulo(index) {
+            const articulos = getArticulos();
+            const art = articulos[index];
+            if (!art) return;
+
+            document.getElementById('editIndex').value = index;
+            document.getElementById('postCategoria').value = art.categoria || '';
+            document.getElementById('postTitulo').value = art.titulo || '';
+            document.getElementById('postFecha').value = art.fecha || '';
+            document.getElementById('postLectura').value = art.lectura || '';
+            document.getElementById('postFrase').value = art.frase || '';
+            document.getElementById('postExtracto').value = art.extracto || '';
+            document.getElementById('postContenido').value = art.contenido || '';
+
+            const preview = document.getElementById('previewImagen');
+            if (art.imagen) {
+                preview.src = art.imagen;
+                preview.classList.add('active');
+            } else {
+                preview.classList.remove('active');
+                preview.src = '';
+            }
+
+            document.getElementById('submitBtn').textContent = '💾 Guardar cambios';
+            document.getElementById('submitBtn').className = 'btn-submit btn-editar';
+            document.getElementById('cancelarBtn').style.display = 'inline-block';
+
+            document.querySelector('.admin-form').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        function cancelarEdicion() {
+            document.getElementById('editIndex').value = '-1';
+            document.getElementById('postForm').reset();
+            document.getElementById('previewImagen').classList.remove('active');
+            document.getElementById('previewImagen').src = '';
+            document.getElementById('submitBtn').textContent = '➕ Publicar artículo';
+            document.getElementById('submitBtn').className = 'btn-submit';
+            document.getElementById('cancelarBtn').style.display = 'none';
+            document.getElementById('fileNombre').textContent = '(opcional)';
+            document.getElementById('postContenido').value = '';
+        }
+
+        // ============================================================
+        // 6. SUBIDA DE IMAGEN
+        // ============================================================
+
+        document.getElementById('postImagen').addEventListener('change', function(e) {
+            const file = e.target.files[0];
+            if (!file) {
+                document.getElementById('fileNombre').textContent = '(opcional)';
+                document.getElementById('previewImagen').classList.remove('active');
+                return;
+            }
+
+            document.getElementById('fileNombre').textContent = file.name;
+
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                const preview = document.getElementById('previewImagen');
+                preview.src = event.target.result;
+                preview.classList.add('active');
+            };
+            reader.readAsDataURL(file);
+        });
+
+        // ============================================================
+        // 7. ENVÍO DEL FORMULARIO
+        // ============================================================
+
+        document.getElementById('postForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const index = parseInt(document.getElementById('editIndex').value);
+            const imagenData = document.getElementById('previewImagen').src || '';
+
+            const articulo = {
+                categoria: document.getElementById('postCategoria').value.trim(),
+                titulo: document.getElementById('postTitulo').value.trim(),
+                fecha: document.getElementById('postFecha').value.trim(),
+                lectura: document.getElementById('postLectura').value.trim(),
+                frase: document.getElementById('postFrase').value.trim(),
+                extracto: document.getElementById('postExtracto').value.trim(),
+                contenido: document.getElementById('postContenido').value.trim(),
+                imagen: imagenData
+            };
+
+            if (!articulo.titulo) {
+                alert('Por favor, escribe al menos un título para el artículo.');
+                return;
+            }
+
+            const articulos = getArticulos();
+
+            if (index >= 0 && index < articulos.length) {
+                if (!articulo.imagen) {
+                    articulo.imagen = articulos[index].imagen || '';
+                }
+                articulos[index] = articulo;
+            } else {
+                articulos.push(articulo);
+            }
+
+            saveArticulos(articulos);
+            renderBlog();
+            renderAdminList();
+            cancelarEdicion();
+
+            const btn = document.getElementById('submitBtn');
+            const originalText = btn.textContent;
+            btn.textContent = '✅ ¡Guardado!';
+            setTimeout(() => {
+                btn.textContent = originalText;
+            }, 1500);
+        });
+
+        // ============================================================
+        // 8. ADMIN: LOGIN / LOGOUT
+        // ============================================================
+
+        function abrirAdmin() {
+            document.getElementById('adminOverlay').classList.add('active');
+            document.getElementById('adminLogin').style.display = 'block';
+            document.getElementById('adminContent').classList.remove('active');
+            document.getElementById('loginError').classList.remove('active');
+            document.getElementById('loginUser').value = '';
+            document.getElementById('loginPass').value = '';
+            document.getElementById('loginUser').focus();
+        }
+
+        function cerrarAdmin() {
+            document.getElementById('adminOverlay').classList.remove('active');
+        }
+
+        function loginAdmin() {
+            const user = document.getElementById('loginUser').value.trim();
+            const pass = document.getElementById('loginPass').value.trim();
+
+            if (user === USUARIO_VALIDO && pass === PASS_VALIDO) {
+                document.getElementById('adminLogin').style.display = 'none';
+                document.getElementById('adminContent').classList.add('active');
+                document.getElementById('loginError').classList.remove('active');
+                renderAdminList();
+                cancelarEdicion();
+            } else {
+                document.getElementById('loginError').classList.add('active');
+                document.getElementById('loginPass').value = '';
+                document.getElementById('loginPass').focus();
+            }
+        }
+
+        function logoutAdmin() {
+            document.getElementById('adminLogin').style.display = 'block';
+            document.getElementById('adminContent').classList.remove('active');
+            document.getElementById('loginError').classList.remove('active');
+            document.getElementById('loginPass').value = '';
+            document.getElementById('loginUser').value = '';
+        }
+
+        document.getElementById('adminOverlay').addEventListener('click', function(e) {
+            if (e.target === this) {
+                cerrarAdmin();
+            }
+        });
+
+        document.getElementById('loginPass').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') loginAdmin();
+        });
+        document.getElementById('loginUser').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') loginAdmin();
+        });
+
+        // ============================================================
+        // 9. FRASE ALEATORIA
+        // ============================================================
+
+        (function() {
+            const frases = [
+                "“Pequeñas decisiones de hoy, cosechan grandes cambios mañana.”",
+                "“La calma no es ausencia de ruido, sino presencia de atención.”",
+                "“El dinero no es el objetivo, es el medio para una vida con sentido.”",
+                "“La vida no es una balanza, es una danza.”",
+                "“No necesitamos más fuerza de voluntad, necesitamos un sistema que nos abrace.”",
+                "“Respirar es el primer acto de libertad.”",
+                "“El equilibrio no es estático, es un baile constante.”"
+            ];
+
+            const elemento = document.getElementById('frase-aleatoria');
+            if (elemento) {
+                const indice = Math.floor(Math.random() * frases.length);
+                elemento.textContent = frases[indice];
+            }
+        })();
+
+        // ============================================================
+        // 10. INICIALIZAR
+        // ============================================================
+
+        renderBlog();
+        renderAdminList();
+    </script>
+
+</body>
+</html>
